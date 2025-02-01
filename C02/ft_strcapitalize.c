@@ -23,7 +23,7 @@ char *ft_strcapitalize(char *str)
 
 int main()
 {
-  char str[] = "a string xampola 42buceta au au + pinto-lep";
+  char str[] = "a string xampola 42batata au au + carro-lep";
   char str2[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
   printf("%s\n", ft_strcapitalize(str));
   printf("%s\n", ft_strcapitalize(str2));

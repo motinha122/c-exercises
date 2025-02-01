@@ -41,7 +41,8 @@ size_t ft_full_size(int size, char **strs, char *sep)
   size_t arr_size = 0;
   size_t sep_size = strlen(sep) * (size - 1);
 
-  while(i < size){
+  while (i < size)
+  {
     arr_size += strlen(strs[i++]);
   }
   return arr_size + sep_size;
@@ -86,15 +87,14 @@ int main(void)
 {
   int size = 5;
   char *strings[] = {
-    "sapato",
-    "pinto",
-    "arroz",
-    "jabuticaba",
-    "vodka"
-  };
+      "sapato",
+      "carro",
+      "arroz",
+      "jabuticaba",
+      "vodka"};
   char *sep = "+";
   char *temp = ft_strjoin(size, strings, sep);
-  char *res = "sapato+pinto+arroz+jabuticaba+vodka";
+  char *res = "sapato+carro+arroz+jabuticaba+vodka";
   printf("strlen: %zu \n", strlen(res));
   printf("strjoin: %s \n", temp);
   free(temp);
