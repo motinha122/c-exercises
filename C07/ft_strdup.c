@@ -14,10 +14,11 @@ char *ft_strcpy(char *dest, char *src)
   return dest;
 }
 
-char *ft_strdup(char *src){
-  char *temp = (char *)malloc(sizeof(char *)*(strlen(src) + 1));
-  if(temp == NULL)
-    return NULL; //boa pratica meter proteção na safada do malloc
+char *ft_strdup(char *src)
+{
+  char *temp = (char *)malloc(sizeof(char *) * (strlen(src) + 1));
+  if (temp == NULL)
+    return NULL; // boa pratica meter proteção na coisa do malloc
 
   return ft_strcpy(temp, src);
 }

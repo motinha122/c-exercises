@@ -1,11 +1,13 @@
 #include <unistd.h>
 #include <stdio.h>
 
-void ft_putchar(char c){
+void ft_putchar(char c)
+{
   write(1, &c, 1);
 }
 
-void ft_putstr(char *str){
+void ft_putstr(char *str)
+{
   char *p = str;
 
   while (*p != '\0')
@@ -15,8 +17,9 @@ void ft_putstr(char *str){
   }
 }
 
-int main(){
-  char string[] = "Safada";
+int main()
+{
+  char string[] = "coisa";
   ft_putstr(string);
   return 0;
 }

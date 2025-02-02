@@ -3,7 +3,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-char * ft_strcpy(char *dest, char *src){
+char *ft_strcpy(char *dest, char *src)
+{
   int i = 0;
   while (src[i] != '\0')
   {
@@ -16,9 +17,9 @@ char * ft_strcpy(char *dest, char *src){
 
 int main()
 {
-  char string[100] = "Safada quente";
+  char string[100] = "coisa quente";
   char *string2 = (char *)malloc(8 * sizeof(char));
-  // string2 = "SAFADA";
+  // string2 = "coisa";
   char *batata = ft_strcpy(string2, string);
   printf("%s ", batata);
   printf("%s ", string);
@@ -26,9 +27,9 @@ int main()
   printf("++ \n");
 
   char *cachorra = (char *)malloc(8 * sizeof(char));
-  // string2 = "SAFADA";
-  char *safada = strcpy(cachorra, string);
-  printf("%s ", safada);
+  // string2 = "coisa";
+  char *coisa = strcpy(cachorra, string);
+  printf("%s ", coisa);
   printf("%s ", string);
   printf("%s", cachorra);
   printf("++ \n");

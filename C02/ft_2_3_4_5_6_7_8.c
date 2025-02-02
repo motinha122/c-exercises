@@ -142,7 +142,7 @@ int main()
   printf("ft_str_is_print %d \n", ft_str_is_print("/n"));
 
   char str[] = "abcdefghjAAAAAAA";
-  char str2[] = "AAAAAFFFFFsafada";
+  char str2[] = "AAAAAFFFFFcoisa";
 
   printf("%s\n", ft_strupcase(str));
   printf("%s\n", ft_strupcase(str2));
