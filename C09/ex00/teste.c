@@ -1,7 +1,8 @@
-#include "ft_libft.h"
+#include "../includes/ft_libft.h"
 #include <stdio.h>
 
-int main(void){
+int main(void)
+{
   char *str = "batata";
 
   int str_size = ft_strlen(str);
