@@ -7,7 +7,7 @@ NAME := ft_display_file
 CC = gcc
 RM = rm -f
 
-CFLAGS := -Wall -Wextra -Werror -g
+CFLAGS := -Wall -Wextra -g
 
 SRC_DIRS := ./src
 
@@ -28,10 +28,10 @@ lep:
 	echo "au au"
 
 run:
-	./$(NAME)
+	./$(NAME) "lorem.txt" 
 
 valquiria:
-	valgrind ./$(NAME)
+	valgrind --track-fds=yes ./$(NAME)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
