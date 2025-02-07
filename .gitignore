@@ -1,6 +1,9 @@
 # TXT files
 *.txt
 
+# Excalidraw files
+*.excalidraw.png
+
 # Prerequisites
 *.d
 
