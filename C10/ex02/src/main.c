@@ -2,7 +2,7 @@
 
 int main(int ac, char *argv[])
 {
-  if(ac == 1)
+  if (ac == 1)
   {
     print_error(ZERO_ARGS);
     return EX_NOINPUT;
