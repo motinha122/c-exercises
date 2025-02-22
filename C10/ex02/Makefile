@@ -30,6 +30,9 @@ lep:
 run:
 	./$(NAME) "lorem.txt" "lep.txt" "linux.txt"
 
+run2:
+	./$(NAME) -c 10 "lorem.txt" "lep.txt" "linux.txt"
+
 valquiria:
 	valgrind --track-fds=yes ./$(NAME)
 
