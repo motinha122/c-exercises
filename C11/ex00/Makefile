@@ -28,10 +28,7 @@ lep:
 	echo "au au"
 
 run:
-	./$(NAME) "lorem.txt" "lep.txt" "linux.txt"
-
-run2:
-	./$(NAME) -c 5 "lorem.txt" "lep.txt" "linux.txt"
+	./$(NAME)
 
 valquiria:
 	valgrind --track-fds=yes ./$(NAME)
