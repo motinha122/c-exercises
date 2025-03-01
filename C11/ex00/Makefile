@@ -2,7 +2,7 @@ SRC_FILES := $(shell find $(SRC_DIRS) -name '*.c' -or -name '*.s')
 
 OBJS := $(SRC_FILES:.c=.o)
 
-NAME := ft_tail
+NAME := ft_foreach
 
 CC = gcc
 RM = rm -f
