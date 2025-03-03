@@ -1,6 +1,6 @@
 #include "../includes/ft.h"
 
-int *ft_map(int *tab, int length, void (*f)(int)){
+int *ft_map(int *tab, int length, int (*f)(int)){
   int *temp_array = (int *)malloc(sizeof(int *) * length);
 
   size_t i = 0;
@@ -8,8 +8,9 @@ int *ft_map(int *tab, int length, void (*f)(int)){
   {
     while (i < length)
     {
-      (*f)(tab[i]);
+      temp_array[i] = (*f)(tab[i]);
       i++;
     }
   }
+  return temp_array;
 }
