@@ -7,7 +7,8 @@
 #include <stdlib.h>
 
 int ft_any(char **tab, int (*f)(char *));
-int ft_double(int nbr);
+int ft_isupper(char *string);
+int ft_islower(char *string);
 void ft_putchar(char c);
 void ft_putnbr(int n);
 
