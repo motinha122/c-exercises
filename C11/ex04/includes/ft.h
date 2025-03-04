@@ -7,6 +7,7 @@
 #include <stdlib.h>
 
 int ft_is_sort(int *tab, int length, int (*f)(int, int));
+int ft_isbigger(int a, int b);
 void ft_putchar(char c);
 void ft_putnbr(int n);
 void ft_putstr(char *str);
