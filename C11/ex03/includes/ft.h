@@ -7,6 +7,7 @@
 #include <stdlib.h>
 
 int ft_count_if(char **tab, int length, int (*f)(char *));
+int ft_islower(char *string);
 void ft_putchar(char c);
 void ft_putnbr(int n);
 void ft_putstr(char *str);
