@@ -1,8 +1,7 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include "../includes/ft.h"~
 
-int ft_atoi(char *str){
+int ft_atoi(char *str)
+{
   int res = 0;
   int i = 0;
   int neg = 1;
@@ -14,7 +13,7 @@ int ft_atoi(char *str){
     }
     i++;
   }
-  
+
   while (str[i] >= '0' && str[i] <= '9')
   {
     res *= 10;
@@ -24,15 +23,4 @@ int ft_atoi(char *str){
   }
 
   return res * neg;
-}
-
-int main(void)
-{
-  char *str1 = "toto3";
-
-  printf("STR: %s \n", str1);
-  printf("ft_atoi: %d \n", ft_atoi(str1));
-  printf("atoi: %d \n", atoi(str1));
-
-  return 0;
 }
