@@ -27,5 +27,4 @@ void ft_putnbr(int n){
     ft_putchar(resultado + 48);
     divisor = divisor / 10;
   }
-  ft_putchar('\n');
 }

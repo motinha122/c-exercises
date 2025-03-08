@@ -1,10 +1,11 @@
-#include "../includes/ft.h"~
+#include "../includes/ft.h"
 
 int ft_atoi(char *str)
 {
   int res = 0;
   int i = 0;
   int neg = 1;
+  
   while (str[i] == ' ' || str[i] == '-' || str[i] == '+')
   {
     if (str[i] == '-')

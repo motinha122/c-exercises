@@ -28,7 +28,7 @@ lep:
 	echo "au au"
 
 run:
-	./$(NAME)
+	./$(NAME) 0 + 2
 
 valquiria:
 	valgrind --track-fds=yes ./$(NAME)
