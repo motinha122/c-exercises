@@ -2,7 +2,11 @@
 
 int main(int ac, char *argv[])
 {
-  ft_hello();
+  int data = 5;
+  t_list *elem = ft_create_elem(data);
+  ft_putstr("Elem data: ");
+  ft_putnbr(elem->data);
   ft_putstr("\n");
+  free(elem);
   return 0;
 }
