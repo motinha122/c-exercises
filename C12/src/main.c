@@ -31,6 +31,9 @@ int main(int ac, char *argv[])
   ft_putnbr(ft_list_size(head1));
   ft_putstr("\n");
 
+  t_list *last_node = ft_list_last(head);
+  ft_putnbr(*(int *)last_node->data);
+
   free(elem);
   free(head);
   return 0;

@@ -27,3 +27,12 @@ int ft_list_size(t_list *begin_list){
   }
   return count;
 }
+
+t_list *ft_list_last(t_list *begin_list){
+  t_list *curr = begin_list;
+  while(curr->next != NULL)
+  {
+    curr = curr->next;
+  }
+  return curr;
+}
