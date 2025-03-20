@@ -36,3 +36,7 @@ t_list *ft_list_last(t_list *begin_list){
   }
   return curr;
 }
+
+void ft_list_push_back(t_list **begin_list, void *data){
+  
+}
