@@ -63,4 +63,11 @@ t_list *ft_list_last(t_list *begin_list);
  */
 void ft_list_push_back(t_list **begin_list, void *data);
 
+/*
+ *    @brief Creates a list of strings pointed by strs and returns the first element.
+ *    @param size The number of strings.
+ *    @param **strs The data to store in the element.
+ */
+t_list *ft_list_push_strs(int size, char **strs);
+
 #endif

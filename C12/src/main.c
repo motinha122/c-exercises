@@ -28,9 +28,12 @@ int main(int ac, char *argv[])
 
   ft_putnbr(ft_list_size(head));
   ft_putstr("\n");
-  ft_putnbr(ft_list_size(head1));
+  
+  ft_list_push_back(&head, &num);
+  
+  ft_putnbr(ft_list_size(head));
   ft_putstr("\n");
-
+  
   t_list *last_node = ft_list_last(head);
   ft_putnbr(*(int *)last_node->data);
 

@@ -38,5 +38,14 @@ t_list *ft_list_last(t_list *begin_list){
 }
 
 void ft_list_push_back(t_list **begin_list, void *data){
+  t_list *elem = ft_create_elem(data);
+  t_list *last = ft_list_last(*begin_list);
+  last->next = elem;
+}
+
+t_list *ft_list_push_strs(int size, char **strs){
+  t_list *head = ft_create_elem(NULL);
   
+
+  return;
 }
