@@ -44,8 +44,11 @@ void ft_list_push_back(t_list **begin_list, void *data){
 }
 
 t_list *ft_list_push_strs(int size, char **strs){
-  t_list *head = ft_create_elem(NULL);
-  
-
-  return;
+  t_list *temp = NULL;
+  int i = 0;
+  while (i < size){
+    ft_list_push_front(&temp, strs[i]);
+    i++;
+  }
+  return temp;
 }
