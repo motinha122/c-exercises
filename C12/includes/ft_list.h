@@ -64,10 +64,24 @@ t_list *ft_list_last(t_list *begin_list);
 void ft_list_push_back(t_list **begin_list, void *data);
 
 /*
- *    @brief Creates a list of strings pointed by strs and returns the first element.
+ *    @brief Creates a linked list of strings pointed by strs and returns the first element.
  *    @param size The number of strings.
  *    @param **strs The data to store in the element.
+ *    @return The first element of the list.
  */
 t_list *ft_list_push_strs(int size, char **strs);
+
+/*
+ *    @brief Frees the data of a link.
+ *    @param *link_data pointer to the data.
+ */
+void free_data(void *link_data);
+
+/*
+ *    @brief Removes and frees all links in the list pointed by the head
+ *    @param *begin_list The head.
+ *    @param (*free_fct)(void *) The function to remove the link.
+ */
+void ft_list_clear(t_list *begin_list, void (*free_fct)(void *));
 
 #endif

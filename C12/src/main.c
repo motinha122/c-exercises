@@ -3,29 +3,29 @@
 int main(int ac, char *argv[])
 {
   // int num = 5;
-  int num1 = 30;
-  int num2 = 20;
-  int num3 = 10;
+  // int num1 = 30;
+  // int num2 = 20;
+  // int num3 = 10;
 
-  t_list *head = NULL;
+  // t_list *head = NULL;
 
   // t_list *head1 = NULL;
   // t_list *elem = ft_create_elem(&num);
 
-  ft_list_push_front(&head, &num1);
-  ft_list_push_front(&head, &num2);
-  ft_list_push_front(&head, &num3);
+  // ft_list_push_front(&head, &num1);
+  // ft_list_push_front(&head, &num2);
+  // ft_list_push_front(&head, &num3);
 
   // ft_list_push_front(&head1, &num1);
   
-  t_list * curr = head;
+  // t_list * curr = head;
 
-  while (curr != NULL)
-  {
-    ft_putnbr(*(int *)curr->data);
-    ft_putstr("\n");
-    curr = curr->next;
-  }
+  // while (curr != NULL)
+  // {
+  //   ft_putnbr(*(int *)curr->data);
+  //   ft_putstr("\n");
+  //   curr = curr->next;
+  // }
 
   // ft_putnbr(ft_list_size(head));
   // ft_putstr("\n");
@@ -47,6 +47,8 @@ int main(int ac, char *argv[])
   // ft_putstr((char *)headstrs->data);
   // ft_putstr("\n");
 
+  strings[0] = "Cinema";
+
   while (curr2 != NULL)
   {
     ft_putstr((char *)curr2->data);
@@ -54,7 +56,9 @@ int main(int ac, char *argv[])
     curr2 = curr2->next;
   }
 
+  ft_list_clear(headstrs, &free_data);
+
   // free(elem);
-  free(head);
+  // free(head);
   return 0;
 }

@@ -1,6 +1,6 @@
 CC = gcc
 #Compilation flags
-CFLAGS = -Wall -Iincludes -I../Utils/includes
+CFLAGS = -Wall -Iincludes -I../Utils/includes -g
 #Library flag
 LDFLAGS = -L../Utils -lutils
 
@@ -25,6 +25,9 @@ $(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
 
 run:
 	./$(NAME)
+
+valquiria:
+	valgrind ./$(NAME)
 
 clean:
 	rm -rf $(BUILD_DIR)

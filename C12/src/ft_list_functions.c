@@ -47,8 +47,25 @@ t_list *ft_list_push_strs(int size, char **strs){
   t_list *temp = NULL;
   int i = 0;
   while (i < size){
-    ft_list_push_front(&temp, strs[i]);
+    ft_list_push_front(&temp, strdup(strs[i]));
     i++;
   }
   return temp;
+}
+
+void free_data(void *link_data){
+  free(link_data);
+  link_data = NULL;
+}
+
+void ft_list_clear(t_list *begin_list, void (*free_fct)(void *)){
+  t_list *current = begin_list;
+  t_list *next = NULL;
+
+  while(current != NULL){
+    next = current->next;
+    free_fct(current->data);
+    free(current);
+    current = next;
+  }
 }
