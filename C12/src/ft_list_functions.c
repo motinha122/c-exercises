@@ -69,3 +69,7 @@ void ft_list_clear(t_list *begin_list, void (*free_fct)(void *)){
     current = next;
   }
 }
+
+t_list *ft_list_at(t_list *begin_list, unsigned int nbr){
+  
+}

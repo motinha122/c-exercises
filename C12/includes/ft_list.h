@@ -84,4 +84,12 @@ void free_data(void *link_data);
  */
 void ft_list_clear(t_list *begin_list, void (*free_fct)(void *));
 
+/*
+ *    @brief Returns the Nth element of the list (first node is 0)
+ *    @param *begin_list The head.
+ *    @param nbr The position of the element.
+ *    @return The element of the position nbr
+ */
+t_list *ft_list_at(t_list *begin_list, unsigned int nbr);
+
 #endif
