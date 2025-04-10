@@ -42,19 +42,23 @@ int main(int ac, char *argv[])
 
   t_list *headstrs = ft_list_push_strs(5, strings);
 
-  t_list *curr2 = headstrs;
+  // t_list *curr2 = headstrs;
+
+  t_list *teste = ft_list_at(headstrs, 5);
+
+  ft_putstr((char *)teste->data);
 
   // ft_putstr((char *)headstrs->data);
   // ft_putstr("\n");
 
-  strings[0] = "Cinema";
+  // strings[0] = "Cinema";
 
-  while (curr2 != NULL)
-  {
-    ft_putstr((char *)curr2->data);
-    ft_putstr("\n");
-    curr2 = curr2->next;
-  }
+  // while (curr2 != NULL)
+  // {
+  //   ft_putstr((char *)curr2->data);
+  //   ft_putstr("\n");
+  //   curr2 = curr2->next;
+  // }
 
   ft_list_clear(headstrs, &free_data);
 

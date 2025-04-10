@@ -71,5 +71,15 @@ void ft_list_clear(t_list *begin_list, void (*free_fct)(void *)){
 }
 
 t_list *ft_list_at(t_list *begin_list, unsigned int nbr){
-  
+  if (nbr >= ft_list_size(begin_list)){
+    return NULL;
+  }
+  t_list *temp = begin_list;
+  unsigned int i = 0;
+  while (i != nbr)
+  {
+    temp = temp->next;
+    i++;
+  }
+  return temp;
 }
