@@ -92,11 +92,13 @@
 //   return 0;
 // }
 
-void  dobrar(void *nbr) {
+void dobrar(void *nbr)
+{
   *(int *)nbr = *(int *)nbr * 2;
 }
 
-int main() {
+int main()
+{
   t_list *list = NULL;
 
   int a = 1;
