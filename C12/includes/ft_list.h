@@ -92,4 +92,29 @@ void ft_list_clear(t_list *begin_list, void (*free_fct)(void *));
  */
 t_list *ft_list_at(t_list *begin_list, unsigned int nbr);
 
+/*
+ *    @brief Reverses the order of the list
+ *    @param **begin_list The head.
+ */
+void ft_list_reverse(t_list **begin_list);
+
+/*
+  *    @brief prints the list.
+  *    @param **begin_list The head.
+*/
+void print_list(t_list *begin_list);
+
+/*
+ *    @brief Iterates over the head and applies the function f to each element.
+ *    @param **begin_list The head.
+ *    @param (*f)(void *) The function to apply to each element.
+*/
+void ft_list_foreach(t_list *begin_list, void (*f)(void *));
+
+/*
+ *    @brief prints the list of integers.
+ *    @param **begin_list The head.
+*/
+void print_list_int(t_list *begin_list);
+
 #endif
