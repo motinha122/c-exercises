@@ -48,6 +48,67 @@ void ft_putnbr(int n)
   }
 }
 
+int ft_putuint(unsigned int n)
+{
+  int size = 0;
+
+  if (n >= 10)
+    size += ft_putuint(n / 10);
+
+  ft_putchar((n % 10) + '0');
+  return (size + 1);
+}
+
+int hex_length(size_t number){
+  int i = 0;
+  
+  if (number == 0)
+    return 0;
+
+  while (number != 0)
+  {
+    number = number / 16;
+    i++;
+  }
+
+  return i;
+}
+
+void ft_puthex(size_t number){
+  char * hex = "0123456789abcdef";
+  int i = hex_length(number);
+  // printf("hex length: %d", i);
+  char *res = calloc((i + 1),sizeof(char));
+  // printf("numba: %zu", number);
+
+  while (i > 0)
+  {
+    res[i - 1] = hex[number % 16];
+    number = number / 16;
+    i--;
+  }
+  ft_putstr(res);
+  free(res);
+}
+
+void ft_puthex_upper(size_t number)
+{
+  char *hex = "0123456789ABCDEF";
+  int i = hex_length(number);
+  // printf("hex length: %d", i);
+  char *res = calloc((i + 1), sizeof(char));
+  // printf("numba: %zu", number);
+
+  while (i > 0)
+  {
+    res[i - 1] = hex[number % 16];
+    number = number / 16;
+    i--;
+  }
+  ft_putstr(res);
+  free(res);
+}
+
 int ft_strcmp(char *s1, char *s2)
 {
   int i = 0;
